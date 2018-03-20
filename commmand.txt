@@ -2,12 +2,13 @@ Firsty open the Tetminal in Linux os than type following command -
 " sudo modprobe -rv rtl8723be " (without ")
 
 Then enter this command line also-
-" sudo modprobe -v rtl8723be ant_sel=1 " (without ")
+" sudo add-apt-repository ppa:hanipouspilot/rtlwifi " (without ")
+" sudo apt-get install rtlwifi-new-dkms " (without ")
 
 Then check your laptop wifi signals
 Enjoy !!
 
-If You want to run these command on every boot then enter following command also.This will create a config file to make the setting permanent 
-" sudo tee /etc/modprobe.d/rtl8723be.conf <<< "options rtl8723be ant_sel=1" " (without ")
+If You want to run these command on every boot then enter following command also.This will create a config file to make the setting permanent :-
+" sudo tee /etc/modprobe.d/rtl8723be.conf <<< "options rtl8723be ant_sel=2" " (without ")
 
 Thank you.!
